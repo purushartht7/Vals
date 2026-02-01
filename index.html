@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Love ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:#fff8f6;
+    color:#333;
+    scroll-behavior:smooth;
+}
+
+section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+h1,h2{
+    font-family:'Playfair Display', serif;
+}
+
+/* ❤️ Signature Badge */
+.signature{
+    position:fixed;
+    top:15px;
+    right:15px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:rgba(255,255,255,0.85);
+    padding:8px 14px;
+    border-radius:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+    z-index:999;
+    backdrop-filter:blur(6px);
+}
+
+.signature img{
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.signature span{
+    font-size:12px;
+    font-weight:500;
+    white-space:nowrap;
+}
+
+/* Hero */
+.hero{
+    height:100vh;
+    background:linear-gradient(to bottom right,#f7c8d0,#fff8f6);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.button{
+    padding:12px 25px;
+    border:none;
+    background:#7b2d4f;
+    color:white;
+    border-radius:25px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.button:hover{
+    background:#a13a68;
+}
+
+/* Timeline */
+.timeline-item{
+    max-width:700px;
+    margin:40px auto;
+    text-align:left;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* Photo */
+.photo-section img{
+    width:300px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Cards */
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    width:250px;
+    height:180px;
+    perspective:1000px;
+}
+
+.card-inner{
+    position:relative;
+    width:100%;
+    height:100%;
+    transition:transform 0.8s;
+    transform-style:preserve-3d;
+    cursor:pointer;
+}
+
+.card.flipped .card-inner{
+    transform:rotateY(180deg);
+}
+
+.card-front, .card-back{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility:hidden;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card-front{
+    background:#f7c8d0;
+}
+
+.card-back{
+    background:#7b2d4f;
+    color:white;
+    transform:rotateY(180deg);
+}
+
+/* Question */
+.question-section{
+    background:#7b2d4f;
+    color:white;
+}
+
+.buttons{
+    margin-top:30px;
+    position:relative;
+}
+
+.yes-btn, .no-btn{
+    padding:12px 25px;
+    border:none;
+    border-radius:25px;
+    font-size:16px;
+    cursor:pointer;
+    margin:10px;
+}
+
+.yes-btn{
+    background:#fff;
+    color:#7b2d4f;
+}
+
+.no-btn{
+    background:#fff;
+    color:#7b2d4f;
+    position:absolute;
+}
+
+.final-message{
+    display:none;
+    font-size:24px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ❤️ Signature -->
+<div class="signature">
+    <img src="signature.jpg" alt="Creator">
+    <span>Made by <strong>Purusharth Tripathi</strong> for his love ❤️</span>
+</div>
+
+<section class="hero">
+    <h1>Heyyloo, mishyyy ❤️</h1>
+    <p>I wanted to ask you something… but not in a boring way.</p>
+    <button class="button" onclick="document.getElementById('timeline').scrollIntoView()">Okay, what is it?</button>
+</section>
+
+<section id="timeline">
+    <h2>Our Journey</h2>
+
+    <div class="timeline-item">
+        <h3>When We First Started Talking</h3>
+        <p>
+        I still remember that random story reply from someone I barely knew… not realizing that person would become my favorite human for life.
+        I don’t know when admiration turned into love — but I remember knowing one thing very clearly: I wanted you.
+        Thank you for that first message. I fall for you more every single day. ❤️
+        </p>
+    </div>
+
+    <div class="timeline-item">
+        <h3>The Moment I Realized You Matter The Most</h3>
+        <p>
+        You are the only person in front of whom even my monsters behave.
+        The day you told me you make wishes for my well-being… something changed in me.
+        That night I saw an entire future with you — and I’ve been loving you deeper ever since.
+        </p>
+    </div>
+
+    <div class="timeline-item">
+        <h3>Our First Meet – 25 December 2025</h3>
+        <p>
+        Seven months of waiting… and then there you were.
+        The happiness felt unreal. The way you stayed with me, talked to me, chose me —
+        I was the happiest man on the planet that day.
+        </p>
+    </div>
+</section>
+
+<section class="photo-section">
+    <h2>Us 💌</h2>
+    <img src="photo.jpg" alt="Us">
+</section>
+
+<section>
+    <h2>Little Things About Us</h2>
+    <div class="cards">
+
+        <div class="card" onclick="this.classList.toggle('flipped')">
+            <div class="card-inner">
+                <div class="card-front">Our Record</div>
+                <div class="card-back">
+                I never talk to anyone for more than an hour…
+                but with you, 5–6 hours feels normal.
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="this.classList.toggle('flipped')">
+            <div class="card-inner">
+                <div class="card-front">Our Dumbest (Cutest) Thing</div>
+                <div class="card-back">
+                We fight. We get mad.
+                But we can’t stay away even for 5 minutes.
+                That’s love.
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="this.classList.toggle('flipped')">
+            <div class="card-inner">
+                <div class="card-front">Our Unofficial Thing</div>
+                <div class="card-back">
+                The accidental reveal, people guessing, people reacting…
+                I secretly loved it.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="timeline-item">
+    <h3>My Favorite Moment With You</h3>
+    <p>
+    That moment when everything faded away and it was just us —
+    that closeness, that warmth, that kiss —
+    it’s forever mine.
+    </p>
+</section>
+
+<section class="question-section">
+    <h2>So…</h2>
+    <h1>Will You Be My Valentine? 💖</h1>
+
+    <div class="buttons">
+        <button class="yes-btn" onclick="showMessage()">YES 💖</button>
+        <button class="no-btn" id="noBtn">No 🙃</button>
+    </div>
+
+    <div class="final-message" id="finalMessage">
+        You just made my year.  
+        Now let's wait for February 14… ❤️
+    </div>
+</section>
+
+<script>
+const noBtn = document.getElementById('noBtn');
+noBtn.addEventListener('mouseover', () => {
+    noBtn.style.top = Math.random()*200 + "px";
+    noBtn.style.left = Math.random()*200 + "px";
+});
+
+function showMessage(){
+    document.getElementById('finalMessage').style.display="block";
+}
+</script>
+
+</body>
+</html>
